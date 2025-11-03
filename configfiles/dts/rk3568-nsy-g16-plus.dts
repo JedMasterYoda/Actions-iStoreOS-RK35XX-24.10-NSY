@@ -651,17 +651,6 @@
 		};
 	};
 
-	spi2m0_pins: spi2m0-pins {
-			rockchip,pins =
-				<2 RK_PB1 4 &pcfg_pull_none>,   // SPI0_CLK
-				<2 RK_PB2 4 &pcfg_pull_none>,   // SPI0_MOSI
-				<2 RK_PB3 4 &pcfg_pull_none>;   // SPI0_MISO
-		};
-
-	spi2m0_cs0: spi2m0-cs0 {
-		rockchip,pins = <2 RK_PB4 4 &pcfg_pull_none>;  // SPI0_CS0
-	};
-
 	sdio-pwrseq {
 		wifi_enable_h: wifi-enable-h {
 			rockchip,pins = <3 RK_PD5 RK_FUNC_GPIO &pcfg_pull_none>;
